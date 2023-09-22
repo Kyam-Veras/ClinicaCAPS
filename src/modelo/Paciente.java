@@ -29,17 +29,29 @@ public class Paciente implements Serializable{
     private Date dataNascimento;
     @Enumerated(EnumType.STRING)
     private TipoGenero genero;
+    @Column
+    private String endereco;
+    @Column
+    private String numeroTelefone;
+    @Column
+    private String email;
+    @OneToOne
+    private Consulta consulta;
     
     //CONSTRUTORES
 
     public Paciente() {
     }
 
-    public Paciente(Long id, String nome, Date dataNascimento, TipoGenero genero) {
+    public Paciente(Long id, String nome, Date dataNascimento, TipoGenero genero, String endereco, String numeroTelefone, String email, Consulta consulta) {
         this.id = id;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.genero = genero;
+        this.endereco = endereco;
+        this.numeroTelefone = numeroTelefone;
+        this.email = email;
+        this.consulta = consulta;
     }
     
     //GETTERS AND SETTERS
@@ -75,14 +87,50 @@ public class Paciente implements Serializable{
         this.genero = genero;
     }
 
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getNumeroTelefone() {
+        return numeroTelefone;
+    }
+
+    public void setNumeroTelefone(String numeroTelefone) {
+        this.numeroTelefone = numeroTelefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Consulta getConsulta() {
+        return consulta;
+    }
+
+    public void setConsulta(Consulta consulta) {
+        this.consulta = consulta;
+    }
+    
     //EQUALS AND HASCHODES
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 67 * hash + Objects.hashCode(this.id);
-        hash = 67 * hash + Objects.hashCode(this.nome);
-        hash = 67 * hash + Objects.hashCode(this.dataNascimento);
-        hash = 67 * hash + Objects.hashCode(this.genero);
+        int hash = 3;
+        hash = 83 * hash + Objects.hashCode(this.id);
+        hash = 83 * hash + Objects.hashCode(this.nome);
+        hash = 83 * hash + Objects.hashCode(this.dataNascimento);
+        hash = 83 * hash + Objects.hashCode(this.genero);
+        hash = 83 * hash + Objects.hashCode(this.endereco);
+        hash = 83 * hash + Objects.hashCode(this.numeroTelefone);
+        hash = 83 * hash + Objects.hashCode(this.email);
+        hash = 83 * hash + Objects.hashCode(this.consulta);
         return hash;
     }
 
@@ -101,19 +149,31 @@ public class Paciente implements Serializable{
         if (!Objects.equals(this.nome, other.nome)) {
             return false;
         }
+        if (!Objects.equals(this.endereco, other.endereco)) {
+            return false;
+        }
+        if (!Objects.equals(this.numeroTelefone, other.numeroTelefone)) {
+            return false;
+        }
+        if (!Objects.equals(this.email, other.email)) {
+            return false;
+        }
         if (!Objects.equals(this.id, other.id)) {
             return false;
         }
         if (!Objects.equals(this.dataNascimento, other.dataNascimento)) {
             return false;
         }
+        if (!Objects.equals(this.consulta, other.consulta)) {
+            return false;
+        }
         return this.genero == other.genero;
     }
-
+    
     //TO STRING
     @Override
     public String toString() {
-        return "Paciente{" + "id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", genero=" + genero + '}';
+        return "Paciente{" + "id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", genero=" + genero + ", endereco=" + endereco + ", numeroTelefone=" + numeroTelefone + ", email=" + email + ", consulta=" + consulta + '}';
     }
 
 }

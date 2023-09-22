@@ -3,16 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/visao/Principal.java</file>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/ConsultarGeneroPaciente.java</file>
+            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/Leitura.java</file>
             <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/META-INF/persistence.xml</file>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/modelo/Paciente.java</file>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/ConsultarPaciente.java</file>
+            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/modelo/Consulta.java</file>
+            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/Cadastrar.java</file>
             <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/AtualizarPaciente.java</file>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/utilitario/DateUtil.java</file>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/RemoverPaciente.java</file>
+            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/modelo/Prescricao.java</file>
             <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/CadastrarPaciente.java</file>
-            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/utilitario/GerarTabela.java</file>
+            <file>file:/C:/Users/kyamv/OneDrive/Documentos/NetBeansProjects/Clinica/src/exemplo/crud/Atualizar.java</file>
         </group>
     </open-files>
 </project-private>

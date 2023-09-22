@@ -3,6 +3,8 @@
   <persistence-unit name="ClinicaPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>modelo.Paciente</class>
+    <class>modelo.Consulta</class>
+    <class>modelo.Prescricao</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/ClinicaDB"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
